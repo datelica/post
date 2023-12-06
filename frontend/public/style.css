@@ -1,0 +1,248 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+  color: #333;
+}
+
+header,
+footer {
+  background: #4a67a1;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header h1,
+footer p {
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.auth-form {
+  margin-bottom: 15px;
+}
+
+/* Style for the top menu */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #f0f2f5;
+}
+
+/* Style for buttons in the top menu */
+nav button,
+nav a {
+  padding: 5px 10px; /* Smaller padding */
+  margin: 0 5px; /* Space between buttons */
+  background-color: #04369c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em; /* Smaller font size */
+  transition: background-color 0.3s;
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Align style with buttons */
+}
+
+/* Hover effect for buttons */
+nav button,
+nav a:hover {
+  background-color: rgb(7, 153, 244);
+}
+
+/* initially hide sections */
+.hidden {
+  display: none;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button,
+a {
+  width: 100%;
+  padding: 0px;
+  border: none;
+  background-color: #b51a93;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button,
+a:hover {
+  background-color: rgb(7, 153, 244);
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#createButton.circle-button {
+  width: 50px; /* Diameter of the circle */
+  height: 50px; /* Diameter of the circle */
+  border-radius: 50%; /* Creates the circle shape */
+  border: 2px solid #007bff; /* Border color */
+  color: #007bff; /* Text color */
+  font-size: 30px; /* Size of the plus sign */
+  line-height: 50px; /* Vertically center the plus sign */
+  text-align: center; /* Horizontally center the plus sign */
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+#navButtons .button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#navButtons .button:hover {
+  background-color: #0056b3;
+}
+
+#registerLink {
+  background-color: transparent; /* Clear background */
+  color: #007bff; /* Blue color for link */
+  text-decoration: none; /* No underline by default */
+  display: block; /* Block display to enable margin and center alignment */
+  margin-top: 10px; /* Space above the link */
+  margin-bottom: 10px; /* Space below the link */
+  text-align: center; /* Center the text */
+  font-size: 1em; /* Standard font size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+#registerLink:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+#loginLink {
+  background-color: transparent; /* Clear background */
+  color: #007bff; /* Blue color for link */
+  text-decoration: none; /* No underline by default */
+  display: block; /* Block display to enable margin and center alignment */
+  margin-top: 10px; /* Space above the link */
+  margin-bottom: 10px; /* Space below the link */
+  text-align: center; /* Center the text */
+  font-size: 1em; /* Standard font size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+#loginLink:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+#posts div {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between; /* Space out items */
+  align-items: center;
+  padding: 10px 0;
+}
+
+.pagination button {
+  padding: 4px 6px;
+  background-color: #f46b03;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.8em; /* Smaller font size */
+  text-align: center;
+  width: 80px;
+}
+
+.pagination button:hover {
+  background-color: #f6b503;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
+.post {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.post-content {
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.post-actions {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+}
+
+.post-actions button {
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #b51a93;
+  padding: 1px 5px; /* Reduced vertical padding */
+  display: flex;
+  align-items: center;
+  line-height: normal; /* Adjust the line height for smaller buttons */
+}
+
+/* Style for the buttons */
+.post-actions button:hover {
+  color: #3ff508;
+  background: #04369c;
+}
+
+.like-count {
+  margin-left: 3px;
+  font-size: 12px;
+}
+
+.user-post {
+  margin-left: 3px;
+  font-size: 12px;
+}

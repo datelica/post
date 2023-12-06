@@ -1,0 +1,16 @@
+extends authtemplate.pug
+
+block content
+ main 
+   section#navigation
+     nav#navButtons                         
+        a#homebutton(href="/") Home              
+         
+   section#authSection
+    div#loginForm.auth-form
+      h2 Login
+      input(type="text", id="loginUsername", placeholder="Username")
+      input(type="password", id="loginPassword", placeholder="Password")
+      button(onclick="login()") Login
+
+      a#registerLink(href="register") Create a New Account 

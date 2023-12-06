@@ -1,0 +1,16 @@
+extends postemplate.pug
+
+block content
+  main 
+    section#navigation
+      a#createButton.circle-button(href="create") +
+      nav#navButtons
+          
+    section#postSection
+      div#posts
+        h2 Posts
+
+      div#pagination
+        div.pagination
+          button#prevPage Previous 5
+          button#nextPage Next 5

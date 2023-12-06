@@ -1,0 +1,13 @@
+extends createtemplate.pug
+
+block content
+ main 
+   section#navigation    
+      nav#navButtons       
+       a#homebutton(href="/") Home       
+
+   section#postSection
+    div#postForm
+      h2 Create Post
+      textarea#postContent(placeholder="Start typing....." rows="10", maxlength="500", minlength="10")
+      button(onclick="createPost()") Post

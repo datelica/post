@@ -1,0 +1,16 @@
+extends authtemplate.pug
+
+block content
+ main 
+   section#navigation
+    nav#navButtons
+            a#homebutton(href="/") Home 
+   section#authSection
+    div#registrationForm.auth-form
+      h2 Register
+      input(type="text", id="registerUsername", placeholder="Username")
+      input(type="password", id="registerPassword", placeholder="Password")
+      input(type="email", id="registerEmail", placeholder="Email")
+      button(onclick="register()") Register
+
+      a#loginLink(href="login") Login to your Account 
